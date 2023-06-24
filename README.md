@@ -2,7 +2,7 @@
 This is the final project of the HTML and CSS course. Create a 4-page website simulating a Toyota car dealership using only HTML and CSS.
 ***
 ### Introduction
-Simulation of a car dealership website. The structure of the website consists of 4 pages (home, products, detail, contact), in this project we only use HTML5 and CSS.
+Simulation of a car dealership website. The structure of the website consists of 4 pages (home, gallery, catalogue, contact), in this project we only use HTML5 and CSS.
 ***
 #### Here are some pictures of the site:
 ![home-page](https://github.com/congtaiho/Dealer-Toyota/assets/132761655/8edd94db-d3f5-415d-8e2a-2d9ac60efa35)
