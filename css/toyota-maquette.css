@@ -1,0 +1,589 @@
+/*--- section qui s'applique à tous les sites --- */
+
+/* declarer font */
+@font-face {
+    font-family: abriFatFace;
+    src: url(../doc/font/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: oldStandard;
+    src: url(../doc/font/OldStandardTT-Bold.ttf);
+}
+
+/* box sizing tous les balie */
+* {
+    box-sizing: border-box;
+}
+
+
+/* pour header générale à tous les sites */
+body {
+    background-color: #e9ecec;
+    color: black;
+}
+
+body>div {
+    margin: auto;
+    width: 90%;
+}
+
+header, footer {
+    background-color: #367c7c;
+    color: white;
+    margin: auto;
+}
+
+header>div:first-child {
+    position: relative;
+    padding: 0 30px;
+}
+
+header>nav {
+    position: absolute;
+    width: 40%;
+    top: 30px;
+    left: 200px;
+}
+
+header>nav>ul>li {
+    display: inline-block;
+    width: 100px;
+}
+
+header>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+header>div:last-child {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    width: 300px;
+    height: 50px;
+}
+
+header>div:last-child>input {
+    position: absolute;
+    height: 25px;
+    width: 200px;
+    top: 10px;
+    margin-left: 20px;
+    background-color: #d9dddd;
+    border: none;
+}
+
+header>div:last-child>label>img {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+header>nav>ul>li:hover {
+    background-color: #529191;
+}
+
+header>nav>ul>li>:hover {
+    color: black;
+}
+
+header>div:last-child>label>img:hover {
+    cursor: pointer;
+    background-color: #529191;
+}
+
+
+
+/* pour nav générale à tous les sites */
+
+nav>div>a>img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+nav>div:first-child {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    z-index: 2;
+    width: 28%;
+    height: 250px;
+    color: white;
+    overflow: hidden;
+}
+
+nav>div:first-child>h1 {
+    font-family: oldStandard;
+}
+
+nav>div:first-child>a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+/* pour main générale à tous les sites */
+main{
+    margin: auto;
+    text-align: center;
+}
+
+
+/* pour footer générale à tous les sites*/
+footer {
+    width: 100%;
+    border-top: 1px solid;
+    flex-shrink: 0;
+    height: 420px;
+}
+
+
+
+.media ul li img {
+    width: 25px;
+}
+
+.media ul {
+    margin-right: 0px;
+}
+
+footer>div {
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 20px;
+    padding: 50px 0 100px;
+    display: flex;
+}
+
+.map>iframe {
+    width: 200px;
+    height: 150px;
+    padding-left: 40px;
+
+}
+
+footer>div>div {
+    width: 30%;
+    margin: 0 30px;
+}
+
+footer h3 {
+    font-size: 27px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+footer p {
+    padding: 0;
+}
+
+.horaires ul, .media ul {
+    list-style-type: none;
+}
+
+.media a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.media {
+    position: relative;
+    right: 20px;
+}
+
+/* s'applique uniquement à la section main de la page d'accueil */
+.home>main>div {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.home>main>div>div {
+    background-color: #d9dddd;
+    height: 80px;
+    width: 400px;
+    padding-left: 10px;
+    box-shadow: 3px 3px #6f7474;
+}
+
+.home>main>div>a>img {
+    width: 400px;
+    height: 300px;
+}
+
+.home>main>div>a>h4 {
+    background-color: #0c121c;
+    color: white;
+    width: 150px;
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+.home>main>div>a {
+    text-decoration: none;
+}
+
+.home>main>div>div>h3 {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.home>main>div>a>img:hover {
+    background-color: rgb(218, 216, 216);
+}
+
+.home>main>div>a>h4:hover {
+    box-shadow: 3px 3px #6f7474;
+}
+
+.home>main>div>a:hover {
+    background-color: red;
+}
+
+
+/* fait css pour page cataloge */
+.catalogue body {
+    background-color: white;
+    color: black;
+}
+
+
+.catalogue main h1, h3, h5, h6 {
+    text-align: center;
+}
+
+.catalogue main>div>div>h4 {
+    color: rgb(153, 52, 5);
+}
+
+.catalogue main>div>a>img {
+    margin: auto;
+    width: 210px;
+    height: 115px;
+}
+
+.catalogue main>div {
+    text-align: center;
+}
+
+.catalogue main>div {
+    display: inline-block;
+    width: 250px;
+    height: 400px;
+    border: 1px solid rgba(70, 69, 69, 0.2);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px rgba(70, 69, 69, 0.2);
+}
+
+.catalogue main>div>div>ul {
+    text-align: left;
+    list-style: none;
+}
+
+.catalogue main>div>a {
+    text-decoration: none;
+}
+
+.catalogue main>div>a>h5 {
+    background-color: #243553;
+    color: whitesmoke;
+    height: 30px;
+    width: 150px;
+    margin: auto;
+    line-height: 30px;
+}
+
+.catalogue main>div>a>img:hover {
+    background-color: rgb(218, 216, 216);
+}
+
+.catalogue main>div>a>h5:hover {
+    box-shadow: 3px 3px #6f7474;
+}
+
+.catalogue main>div>a:hover {
+    background-color: red;
+    color: red;
+}
+
+/* fait css pour page contact */
+.contact>main {
+    background-color: #f0f7f7;
+}
+
+.contact>nav>div:first-child>a>h1 {
+    text-decoration: 5px underline red;
+}
+
+
+.contact :target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+
+.contact>main>p {
+    font-style: italic;
+}
+
+.contact>main>div>div{
+    width: 50%;
+}
+
+.contact main h4{
+    text-align: left;
+}
+
+
+.contact>main>div>div:first-child{
+    float: right;
+}
+
+.contact>main>div>div>div>label{
+    display: inline;
+   float: left;
+   padding-left: 50px;
+   
+
+    
+}
+
+.contact>main>div>div>div>select{
+    width: 380px;
+    height: 25px;
+    float: right;
+}
+
+.contact>main>div>div>div>input{
+    width: 380px;
+    height: 25px;
+    float: right;
+}
+
+.contact>main>div>div>div{
+    display: inline-block;
+    width: 100%;
+}
+
+.contact>main>div>div:last-child{
+    width: 30%;
+}
+
+.contact>main>div> h4+fieldset>div>div{
+    display: inline-block;
+    margin: 10px 30px ;
+}
+
+.contact>main>div>fieldset>legend{
+    text-align: left;
+}
+
+.contact>main>div>fieldset{
+    margin-bottom: 20px;
+}
+
+.contact>main>div>fieldset>div>h5{
+    background-color: #88acac;
+    color: #e5eecc;
+    height: 30px;
+    width: 30%;
+    font-size: 1.2em;
+    line-height: 30px;
+    margin: 5px auto;
+
+}
+
+.contact>main>div>h4+fieldset>input{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.contact>main>div>div:last-child{
+    display: table-cell;
+    border:1px solid rgb(68, 68, 68);
+    padding: 0 10px;
+    width: 300px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* css pour page galerie */
+.galerie section {
+    border: 4px solid black;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.galerie section div {
+    display: inline-block;
+    padding: 10px;
+}
+
+.galerie .model {
+    border-bottom: 1px solid red;
+    width: 80%;
+}
+
+.galerie .model:last-of-type {
+    border-bottom: 0;
+}
+
+.galerie section>div>div {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    width: 800px;
+    height: 200px;
+}
+
+.galerie section>div>div {
+    width: 400px;
+    height: 200px;
+    box-shadow: #0c121c;
+}
+
+.galerie section img {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 400px;
+    height: 200px;
+}
+
+.galerie>section h1 {
+    background: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: 1px dashed black;
+}
+
+.galerie>section>div>div>div h3 {
+    background-color: #11a1a1;
+    color: black;
+}
+
+.galerie>section>div>div>div a {
+    color: red;
+}
+
+/* css pour page details-produit */
+.detailsProduit>main {
+    width: 100%;
+    height: 1200px;
+
+}
+
+.detailsProduit>main>div>div {
+
+    margin-left: 100px;
+    border-bottom: 1px dashed black;
+    width: 80%;
+    margin-bottom: 400px;
+
+}
+
+.detailsProduit>header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.detailsProduit>footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 260px;
+    line-height: 20px;
+    margin-top: 0;
+    visibility: hidden;
+}
+
+/* css pour page tableau */
+
+.tableau>main>div>table {
+    width: 100%;
+    margin: auto;
+    
+}
+
+.tableau>main>div{
+    margin-bottom: 20px;
+    
+    
+}
+
+.tableau>main>div>table>thead>tr>th{
+    height: 50px;
+    width: 20px;
+    color: #979696;
+}
+
+.tableau main caption {
+    margin: 20px;
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #979696;
+}
+
+.tableau>main>div>table>tbody>tr>td>img{
+    width: 30px;
+}
+
+.tableau main img {
+
+    width: 100px;
+}
+
+.tableau main div table, th, td {
+    border: 1px solid rgb(157, 182, 179);
+}
+
+.tableau>main>div>table th:hover{
+    color: #d30b0b;
+    background-color: #529191;
+}
+
+.tableau>main>div>table td:hover{
+    color: #d30b0b;
+    background-color: #529191;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:768px) {}
+
+@media only screen and (min-width:992px) {}

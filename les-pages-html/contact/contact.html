@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/toyota-maquette.css">
+    <title>Page contact</title>
+</head>
+
+<body>
+    <div class="contact">
+        <header>
+            <div>
+                <a href="../../index.html"><img
+                        src="../../doc/logo-icon/Toyota-logo-icon-on-transparent-background-PNG.png" alt="logo toyota"
+                        width="80" height="90"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="..">Accueil</a></li>
+                    <li><a href="../galerie/galerie.html">Galerie</a></li>
+                    <li><a href="../cataloge/catalogue.html">Catalogue</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <input type="search" name="search" id="search" placeholder="Search">
+                <label for="search"><img src="../../doc/logo-icon/icons8-search-64.png" alt="icon search"></label>
+            </div>
+        </header>
+        <nav>
+            <div>
+                <a href="#rendez-vous">
+                    <h1>Rendez-vous</h1>
+                </a>
+
+                <p>
+                    Le service Toyota Express est conçu pour vous permettre de reprendre la route en toute sécurité dans
+                    un délai qui correspond à votre emploi du temps.
+                </p>
+            </div>
+
+            <div>
+                <a href="../galerie/galerie.html"><img src="../contact/image-contact/toyota-formulaire.jpg"
+                        alt="toyota-mission"></a>
+            </div>
+        </nav>
+        <main>
+            <h1 id="rendez-vous">Prendre un rendez-vous de service</h1>
+            <p>Veuillez remplir et soumettre le formulaire et votre concessionnaire Toyota communiquera avec vous pour
+                confirmer la date et l'heure de votre rendez-vous.</p>
+            <h4>Étape 1:</h4>
+
+            <div>
+                <div>
+                    <div>
+                        <label for="sujet">Sujet</label>
+                        <select name="sujet" id="sujet">
+                            <option value=" ">Type de rendez-vous</option>
+                            <option value="choix 1">ACHETER</option>
+                            <option value="choix 2">SERVICE</option>
+                            <option value="choix 3">REPARATION</option>
+                            <option value="choix 4">MAINTENACE</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="lastName">Nom</label>
+                        <input type="text" id="lastName" placeholder="Nom" />
+                    </div>
+
+                    <div>
+                        <label for="userPhone">Téléphone</label>
+                        <input type="tel" id="userPhone" name="userPhone" placeholder="(Format: 123-456-7890)" />
+                    </div>
+                </div>
+
+
+                <div>
+
+
+                    <div>
+                        <label for="location">Location</label>
+                        <select name="location" id="location">
+                            <option value=" ">sélectionner un revendeur</option>
+                            <option value="choix 1">BOUCHERVILLE TOYOTA</option>
+                            <option value="choix 2">CHARLEVOIX TOYOTA</option>
+                            <option value="choix 3">CARREFOUR TOYOTA</option>
+                            <option value="choix 4">ALMA TOYOTA</option>
+                            <option value="choix 5">CHASSE TOYOTA</option>
+                            <option value="choix 6">MONTREAL TOYOTA</option>
+                            <option value="choix 7">ST-JEROME TOYOTA</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label for="firstName">Prénom</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Prénom" />
+                    </div>
+
+                    <div>
+                        <label for="userEmail">Courriel</label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder="abc@gmail.com" />
+                    </div>
+                </div>
+
+                <h4>Étape 2:</h4>
+                <fieldset>
+                    <legend>Choisissez votre temps libre</legend>
+                    <div>
+                        <div>
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" value="2022-01-01" min="2022-01-01"
+                                max="2023-12-31">
+                        </div>
+
+                        <div>
+                            <label for="matin">Matin</label>
+                            <input type="radio" id="matin" name="choix" checked>
+                        </div>
+
+                        <div>
+                            <label for="midi">Après midi</label>
+                            <input type="radio" id="midi" name="choix">
+                        </div>
+
+                        <div>
+                            <label for="soir">Soir</label>
+                            <input type="radio" id="soir" name="choix">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h4>Étape 3:</h4>
+                <fieldset>
+                    <legend>Intéressé</legend>
+                    <div>
+                        <h5>Choisissez le modele que vous aimez:</h5>
+                        <div>
+                            <input type="checkbox" name="choix modele" id="choix 1" checked>
+                            <label for="choix 1">Modèle Famille</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="choix modele" id="choix 2">
+                            <label for="choix 2">Modèle Luxe</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="choix modele" id="choix 3">
+                            <label for="choix 3">Modèle Sport</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="choix modele" id="choix 4">
+                            <label for="choix 4">Modèle General</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5>Choisissez la couleur que vous aimez:</h5>
+                        <div>
+                            <input type="checkbox" name="choix couleur" id="choix 5" checked>
+                            <label for="choix 4">Blanc</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="choix couleur" id="choix 6">
+                            <label for="choix 6">Noire</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="choix couleur" id="choix 7">
+                            <label for="choix 7">Rouge</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="choix couleur" id="choix 8">
+                            <label for="choix 8">Jaune</label>
+                        </div>
+
+                    </div>
+
+
+
+
+                </fieldset>
+                <h4>Étape 4:</h4>
+                <fieldset>
+                    <legend>Message</legend>
+                    <div>
+                        <textarea name="message" id="message" cols="100" rows="5"
+                            placeholder="commentaires supplémentaires"></textarea>
+                    </div>
+                    <input type="image" src="../contact/image-contact/Submit-Button-PNG-Transparent-Image.png" alt="icon submit">
+                </fieldset>
+
+                <div>
+                    <input type="checkbox" name="robot" id="choix 9">
+                    <label for="choix 9">Je ne suis pas un robot</label>
+                    <img src="../contact/image-contact/kisspng-recaptcha-checkbox-.jpg" alt="recaptcha icon"
+                        width="30px" height="20px">
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div class="map">
+                    <h3>Trouvez Nous</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.944315983379!2d-73.60823468515034!3d45.61176297910292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91fb0e0e34097%3A0xce7646d16d7556f3!2sToyota%20Montr%C3%A9al-Nord!5e0!3m2!1sfr!2sca!4v1670832338678!5m2!1sfr!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="adresse">
+                    <h3>Adresse</h3>
+                    <p>
+                    <h5>Toyota Montréal-Nord</h5>
+                    6767 Boul Henri-Bourassa E, Montréal-Nord, QC H1G 2V6
+                    </p>
+                </div>
+                <div class="horaires">
+                    <h3>Les horaires</h3>
+                    <ul>
+                        <li>✔️ Lundi 09h-20h</li>
+                        <li>✔️ Mardi 09h-20h</li>
+                        <li>✔️ Mercredi 09h-20h</li>
+                        <li>✔️ Jeudi 09h-20h</li>
+                        <li>✔️ Vendredi 09h-20h</li>
+                        <li>✔️ Samedi 10h-17h</li>
+                        <li>❌ Dimanche fermé</li>
+                    </ul>
+                </div>
+                <div class="media">
+                    <h3>Nos Réseaux Sociaux</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/toyotacanada/"><img
+                                    src="../../doc/image/icone-facebook.svg"
+                                    alt="icone facebook" />Facebook/Toyota Canada</a></li>
+                        <li><a href="https://www.instagram.com/toyotacanada/?hl=fr"><img
+                                    src="../../doc/image/icone-instagram.svg"
+                                    alt="icone facebook" />Instagram/toyotacanada</a></li>
+                        <li><a href="https://twitter.com/toyotacanada"><img
+                                    src="../../doc/image/icone-twitter.svg"
+                                    alt="icone facebook" />Twitter/Toyota Canada</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
