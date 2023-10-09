@@ -54,7 +54,7 @@ Simulation of a car dealership website. The structure of the website consists of
 - 🔃 Create a new pull request.
 
 
-## Teams 💡
+## Teams ✨
 [@Cong Tai Ho] [@Khadija]
 
 
