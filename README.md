@@ -29,7 +29,7 @@ Simulation of a car dealership website. The structure of the website consists of
 ✔️ Home\
 ✔️ Galery\
 ✔️ Catalog\
-✔️ Contact\
+✔️ Contact
 
 
 ## Tools Used 🛠️
